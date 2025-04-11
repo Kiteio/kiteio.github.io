@@ -1,0 +1,36 @@
+.paper {
+    padding: 48px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.paper h1 {
+    font-size: 2.8rem;
+}
+
+.paper h2 {
+    font-size: 2rem;
+}
+
+.paper h3 {
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 450px) {
+    .paper {
+        padding: 30px;
+    }
+
+    .paper h1 {
+        font-size: 1.6rem;
+    }
+
+    .paper h2 {
+        font-size: 1.2rem;
+    }
+
+    .paper h3 {
+        font-size: 1.1rem;
+    }
+}

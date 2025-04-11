@@ -1,0 +1,27 @@
+.tag {
+    color: #306FB8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: #306FB8 1px solid;
+    border-radius: 20px;
+    padding: 4px 8px;
+    margin: 0 4px;
+    line-height: 2rem;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .tag {
+        color: #5E9EFF;
+        border: #5E9EFF 1px solid;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .tag {
+        font-size: 0.6rem;
+        margin: 0 2px;
+        line-height: 1.5rem;
+    }
+}

@@ -1,0 +1,43 @@
+.top-app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF88;
+  backdrop-filter: blur(4px);
+  padding: 8px 24px;
+  box-shadow: 0 1px 1px #00000022;
+}
+
+.app-bar-content-group {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.name {
+  color: #000000EE;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .top-app-bar {
+    background-color: #00000088;
+    backdrop-filter: blur(2px);
+  }
+
+  .name {
+    color: #FFFFFFEE;
+  }
+}

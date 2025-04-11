@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.quote {
+  font-size: 1.4rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-card-group {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.appreciation-code {
+  width: 100%;
+  aspect-ratio: 1;
+  background-image: url('./assets/appreciation_code.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 4px #00000022;
+}
+
+.center-gravity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 450px) {
+  .quote {
+    font-size: 1rem;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media screen and (max-width: 650px) {
+  .product-card-group {
+    flex-direction: column;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

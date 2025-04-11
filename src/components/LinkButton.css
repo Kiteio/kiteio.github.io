@@ -1,0 +1,59 @@
+.link-button {
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: #000000 solid 2px;
+    border-radius: 24px;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+}
+
+.link-button:hover {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #6C80C6, #D09EFF, #6C80C6);
+    background-size: 200% 100%;
+    animation: flow 2s linear infinite;
+    border: #00000000 solid 2px;
+    box-shadow: 0 0 6px #00000022;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.link-button:active {
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .link-button {
+        border: #FFFFFF solid 2px;
+        background-color: #000000;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .link-button:hover {
+        border: #000000 solid 2px;
+        color: inherit;
+        background: #FFFFFF none;
+        animation: none;
+        box-shadow: none;
+    }
+
+    .link-button:active {
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #6C80C6, #D09EFF, #6C80C6);
+        background-size: 200% 100%;
+        animation: flow 2s linear infinite;
+        border: #00000000 solid 2px;
+        box-shadow: 0 0 6px #00000022;
+    }
+}

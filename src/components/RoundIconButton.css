@@ -1,0 +1,20 @@
+.round-icon-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 8px;
+  border: none;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 4px #00000033;
+}
+
+.round-icon-link:active {
+  background-color: #DDDDDD;
+  box-shadow: none;
+}
+
+.round-icon-link img {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
